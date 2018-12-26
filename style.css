@@ -1,0 +1,88 @@
+/*
+  Theme Name:   Ben's Storefront Child Theme
+  Description:  WooCommerce Storefront Child Theme
+  Author:       Ben Greene
+  Author URI:   https://www.benrgreene.com
+  Template:     storefront
+  Version:      1.0.0
+  License:      GNU General Public License v2 or later
+  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+.footer-widgets::after {
+  display: none;
+}
+
+.site-footer {
+  padding: 0;
+}
+
+.copyright {
+  padding: 10px 0;
+  color: #FFF;
+  background-color: #333;
+}
+
+@media(max-width: 568px) {
+  .site-header {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media(max-width: 768px) {
+  .site-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .site-header > *:first-child {
+    margin-bottom: .75em;
+  }
+}
+
+.entry-meta,
+.entry-content {
+  float: none !important;
+  width: 100% !important;
+}
+
+.vcard__image {
+  height: 64px;
+  width: 64px;
+}
+.vcard__image img {
+  border-radius: 100%;
+}
+
+.post-meta {
+  margin-bottom: 1em;
+  border-bottom: 1px solid rgba(0,0,0,.05);
+  padding-bottom: 1em;
+  display: flex;
+  align-items: center;
+}
+
+@media(min-width: 768px) {
+  .hentry .entry-header,
+  .post-meta {
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+  }
+  .post-meta {
+    margin-bottom: 2.617924em;
+  }
+}
+
+.vcard__info {
+  margin-left: 20px;
+}
+
+.cat-links {
+  margin-bottom: 0;
+}
+
+.full-width .content-area {
+  width: 100%;
+  float: none;
+}

@@ -1,0 +1,25 @@
+.site-header {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+}
+
+.site-header > * {
+  position: relative;
+  z-index: 5;
+}
+
+body .site-header::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(50, 50, 50, 0.6);
+}
+
+.sub-menu > li:hover {
+  background-color: #4b4b4b;
+}
